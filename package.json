@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "next": "12.2.0",
+    "phosphor-react": "^1.4.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-elastic-carousel": "^0.11.5",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "eslint": "8.18.0",
