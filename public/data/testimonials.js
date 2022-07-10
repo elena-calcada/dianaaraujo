@@ -4,23 +4,20 @@ import elena from '../testimonials/elena.png';
 
 export const testimonials = [
   {
-    name: 'Letícia Bernardo',
-    image: leticia,
-    testimonial: 'Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.',
-    alt: 'Letícia Bernardo sorrindo',
+    name: 'Bruna Junger',
+    image: bruna,
+    testimonial: 'Diana é megaaa paciente e uma excelente profissional. Não é a toa que viajo mais de 200km para continuar sendo atendida por ela!',
   },
 
   {
-    name: 'Bruna Junger',
-    image: bruna,
-    testimonial: 'Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.',
-    alt: 'Bruna Junger sorrindo',
+    name: 'Letícia Bernardo',
+    image: leticia,
+    testimonial: 'A melhor clínica odontológica com a melhor localização e atendimento acolhedor. Não tenho como expressar mediante tamanha a competência. Recomendo!'
   },
 
   {
     name: 'Elena Evangelista',
     image: elena,
-    testimonial: 'Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.',
-    alt: 'Bruna Junger sorrindo',
+    testimonial: 'Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt.',
   },
 ];

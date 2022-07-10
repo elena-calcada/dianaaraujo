@@ -13,11 +13,16 @@ export const SectionFooter = styled.footer`
       margin: 0;
     }
   }
+  @media(min-width: 1200px) {
+    
+  }
 `;
 
 export const Container = styled.div`
   margin: auto;
   padding: 5rem 1.5rem;
+  display: grid;
+  gap: 2.5rem;
 
   h3 {
         font: 700 1.125rem ${({ theme }) => theme.font.titleFont};
@@ -26,7 +31,6 @@ export const Container = styled.div`
       }
 
   .navigation {
-    margin-bottom: 2.25rem;
 
     li {
       list-style: none;
@@ -48,7 +52,6 @@ export const Container = styled.div`
   }
 
   .localization {
-    margin-bottom: 2.25rem;
 
     p {
       max-width: 290px;
@@ -68,13 +71,29 @@ export const Container = styled.div`
     }
 
   .attendance {
-    margin-bottom: 2.25rem;
+    
   }
 
   .social-media {
-    margin-bottom: 2.25rem;
+   
     a {
       color: ${({ theme }) => theme.colors.textColor};
     }
+  }
+
+  .blockTwo {
+      display: grid;
+      gap: 2.25rem;
+    }
+
+  .blockThree {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  @media(min-width: 1024px) {
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 5rem 8rem;
   }
 `;

@@ -24,6 +24,7 @@ export default createGlobalStyle`
       font: 400 ${({ theme }) => theme.fontSize.textSize} ${({ theme }) => theme.font.textFont};
       margin-bottom: 1rem;
       color: ${({ theme }) => theme.colors.textColor};
+      line-height: 26px;
     }
 
     img {

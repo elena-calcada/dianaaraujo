@@ -32,6 +32,18 @@ export default function Header() {
             <i><X size={32} />
           </i>}
         </div>
+
+        <div className='menuDesktop'>
+          <ul>
+            {menuItens.map((item, index) => (
+              <li key={index}>
+                <Link href={item.path}>
+                  <a >{item.title}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Container>
       
       {!menu ?
@@ -67,7 +79,6 @@ export default function Header() {
           </div>
         </ContainerMenu>
       }
-      
     </>
   );
 }

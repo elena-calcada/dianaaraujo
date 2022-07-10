@@ -47,84 +47,85 @@ export default function Home() {
       <SectionHome id="home">
         <h1>Diana Araújo</h1>
         <p>
-          Odontologia Humanizada, um conceito diferenciado no que se refere
-          a cuidar de você e do seu bem estar.
+          Somos comprometidos em oferecer saúde e bem estar através da odontologia humanizada.
+          Contamos com uma equipe  multidisciplinar, capacitada e experiente nas mais diversas áreas da Odontologia.
         </p>
         <Button />
       </SectionHome>
+      <DividerOne />
 
       <SectionAboult id="aboult">
         <Container>
           <Image src={aboultImage} alt=" Doutora Diana Araújo realizando um procedimento em uma paciente" width={275} height={386} />
         </Container>
-        <Container>
+        <Container className='text'>
           <h2>Sobre</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse sagittis arcu quis nisi luctus,
-            id accumsan felis tristique. Proin quis bibendum diam.
-            Sed consequat nisl laoreet eros ultricies pellentesque.
-            Nullam in est porta, pellentesque massa vitae, vehicula risus.
+            Olá! Sou Diana, há mais de 10 anos responsável pelo consultório odontológico Diana Araújo. Aqui, o atendimento ao paciente é feito seguindo o conceito da Odontologia Humanizada, o que representa uma tranquilizadora diferença nessa área.
           </p>
           <p>
-            In placerat, felis vitae sodales dictum, lacus quam pretium mi,
-            ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh.
-            Donec luctus, nunc finibus elementum suscipit,
-            tortor augue vulputate sapien, vitae feugiat enim augue sed.
+            Essa é a hora em que você me pergunta: “Mas, Diana, o que isso significa 🤔?” 
           </p>
           <p>
-            Quisque id aliquam elit. Suspendisse congue pharetra maximus.
-            Duis rutrum velit a leo euismod dictum. Sed sodales est
-            efficitur arcu tincidunt tincidunt. Curabitur fringilla,
-            risus at feugiat feugiat, nisl nulla tincidunt tellus,
-            elementum elementum lorem nisl eleifend dolor.
-            Nullam eget dui at sem ullamcorper luctus.
+            Bom, significa que o paciente é tratado com atenção, cuidado, empatia... e que o relacionamento dentista-paciente é cultivado com tempo e paciência. Em outras palavras, implica oferecer um atendimento que realmente resolve o seu problema de uma forma eficiente, inteligente e humana, reforçada por um ambiente aconchegante, acolhedor e, claro, sempre com aquele cafezinho esperto só esperando por você.
+          </p>
+          <p>
+            “Legal!... mas por que esse tipo de atendimento é assim tão especial 🤔?”
+          </p>
+          <p>
+            Então: a humanização transforma o atendimento odontológico em algo prazeroso, dando a você a possibilidade de superar dificuldades como, por exemplo, a odontofobia, conhecida também como medo de dentista.
+          </p>
+          <p>
+            Huuum!… não tá acreditando em mim, né 😅?!
+          </p>
+          <p>
+            Vamos fazer o seguinte: que tal você marcar um horário e vir até aqui, para que eu mostre como esse tipo de atendimento realmente funciona?
+          </p>
+          <p>
+            Combinado? Aguardo você 😉!
           </p>
         </Container>
       </SectionAboult>
-      <DividerOne />
-
-      <SectionTreatments id="treatments">
-        <Container>
-          <h2>Tratamentos</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse sagittis arcu quis nisi luctus, id accumsan
-            felis tristique. Proin quis bibendum diam.
-          </p>
-        </Container>
-        {Object.entries(typesOfTreatments).map(([key, value]) => (
-          <Card key={key}>
-            <div>
-              <Image src={value.image} alt="Clínica Geral" />
-            </div>
-            <div>
-              <h3>{value.title}</h3>
-              <p>
-                {' '}
-                {value.description}
-                {' '}
-              </p>
-              <Link href={`/${key}`}>
-                Saiba mais...
-              </Link>
-            </div>
-          </Card>
-        ))}
-
-      </SectionTreatments>
       <DividerTwo />
 
+      <SectionTreatments id="treatments">
+        <Container className='text'>
+          <h2>Tratamentos</h2>
+          <p>
+            Oferecemos o melhor atendimento nos mais diversos tipos de tratamentos.
+          </p>
+        </Container>
+        <div className='cards'>
+          {Object.entries(typesOfTreatments).map(([key, value]) => (
+            <Card key={key}>
+              <div>
+                <div>
+                  <Image src={value.image} alt="Clínica Geral" />
+                </div>
+                <div>
+                  <h3>{value.title}</h3>
+                  <p>
+                    {' '}
+                    {value.description}
+                    {' '}
+                  </p>
+                  {/* <Link href={`/${key}`}>
+                    Saiba mais...
+                  </Link> */}
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+      </SectionTreatments>
+      <DividerOne />
+
       <SectionClinicalStaff id="clinical-staff">
-        <Container>
+        <Container className='text'>
           <h2>Corpo Clínico</h2>
           <p>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Suspendisse sagittis arcu
-            quis nisi luctus, id accumsan
-            felis tristique.
-            Proin quis bibendum diam.
+            Contamos com profissionais capacitados e experientes em diversas áreas da odontologia.
           </p>
         </Container>
         <ContainerClinicalStaff>
@@ -133,7 +134,7 @@ export default function Home() {
               <div className="image">
                 <Image src={value.image} alt="Doutora Diana Araújo sorrindo" />
               </div>
-              <div className="text">
+              <div className="identification">
                 <h3>{value.identification}</h3>
                 <h4>{value.specialty}</h4>
                 <p>{value.cro}</p>
@@ -146,20 +147,15 @@ export default function Home() {
         </ContainerClinicalStaff>
 
       </SectionClinicalStaff>
-      <DividerOne />
+      <DividerTwo />
 
       <SectionSpace id="space">
-        <Container>
+        <div className='text'>
           <h2>Nosso Espaço</h2>
           <p>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Suspendisse sagittis arcu
-            quis nisi luctus, id accumsan
-            felis tristique.
-            Proin quis bibendum diam.
+            Venha conhecer o nosso espaço. Um ambiente humanizado, aconchegante e acolhedor. Aqui você se sentirá tranquilo e seguro.
           </p>
-        </Container>
+        </div>
         <ContainerCarousel>
           <Carousel breakPoints={breakPoints}>
             {Object.entries(spaceImages).map(([key, value]) => (
@@ -171,7 +167,7 @@ export default function Home() {
         </ContainerCarousel>
 
       </SectionSpace>
-      <DividerTwo />
+      <DividerOne />
 
       <SectionTestimonials id="testimonials">
         <h2>Depoimentos</h2>
@@ -194,16 +190,18 @@ export default function Home() {
           </Carousel>
         </ContainerCarousel>
       </SectionTestimonials>
-      <DividerOne />
+      <DividerTwo />
 
       <SectionContact id="contact">
         <Container>
-          <Image src={contactImage} alt="Mulher sentada na cadeira e com os cotovelos apoiados na mesa está mexendo no celular. Tem uma xícara de café sobre a mesa, logo a sua frente." width={275} height={386} />
+          <Image src={contactImage} alt="Mulher sentada na cadeira e com os cotovelos apoiados na mesa está mexendo no celular. Tem uma xícara de café sobre a mesa, logo a sua frente." />
         </Container>
-        <Container>
-          <h2>Entre em contato com a gente!</h2>
-          <p>Entre em contato, tire suas dúvidas e marque uma consulta.</p>
-          <div className="contact">
+        <div>
+          <div>
+            <h2>Entre em contato com a gente!</h2>
+            <p>Entre em contato, tire suas dúvidas e marque uma consulta.</p>
+          </div>
+          <div className="list">
             <ul>
               <li>
                 <i>
@@ -244,9 +242,9 @@ export default function Home() {
             </ul>
           </div>
           <Button />
-        </Container>
+        </div>
       </SectionContact>
-      <DividerTwo />
+      <DividerOne />
     </>
   )
 }

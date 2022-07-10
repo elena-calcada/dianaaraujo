@@ -21,13 +21,13 @@ export const SectionHome = styled.section`
   }
 
   p {
-    max-width: 15rem;
+    max-width: 20rem;
     margin-bottom: 1.5rem;
   }
 
   @media(min-width: 541px) and (max-width: 767px) {
 
-    padding: 18rem 2.5rem;
+    padding: 18rem 4rem;
 
     h1 {
       font: 700 3.5rem ${({ theme }) => theme.font.titleFont};
@@ -42,7 +42,7 @@ export const SectionHome = styled.section`
   @media(min-width: 768px) and (max-width: 1023px) {
     background-image: url(${backgroundTablet.src});
 
-    padding: 18rem 4rem;
+    padding: 18rem 6rem;
 
     h1 {
       font: 700 3.5rem ${({ theme }) => theme.font.titleFont};;
@@ -57,30 +57,45 @@ export const SectionHome = styled.section`
   @media(min-width: 1024px) and (max-width: 1199px) {
     background-image: url(${backgroundDesktop.src});
 
-    padding: 18rem 8rem;
+    padding: 18rem 6rem;
 
     h1 {
-      font: 700 3.5rem ${({ theme }) => theme.font.titleFont};;
+      font: 700 4rem ${({ theme }) => theme.font.titleFont};;
     }
 
     p {
       font: 400 1.2rem ${({ theme }) => theme.font.textFont};
-      max-width: 25rem;
+      max-width: 26rem;
     }
   }
 
-  @media(min-width: 1200px) {
+  @media(min-width: 1200px) and (max-width: 1440px) {
     background-image: url(${backgroundDesktop.src});
 
-    padding: 18rem 8rem;
+    padding: 15rem 8rem;
 
     h1 {
       font: 700 4.5rem ${({ theme }) => theme.font.titleFont};;
     }
 
     p {
+      font: 400 1.25rem ${({ theme }) => theme.font.textFont};
+      max-width: 28rem;
+    }
+  }
+
+  @media(min-width: 1441px){
+    background-image: url(${backgroundDesktop.src});
+
+    padding: 21rem 10rem;
+
+    h1 {
+      font: 700 6rem ${({ theme }) => theme.font.titleFont};;
+    }
+
+    p {
       font: 400 1.5rem ${({ theme }) => theme.font.textFont};
-      max-width: 25rem;
+      max-width: 36rem;
     }
   }
 `;
@@ -95,18 +110,180 @@ export const SectionAboult = styled.section`
   display: grid;
   gap: 2rem;
   background: #ffffff;
+
+  @media(min-width: 541px) and (max-width: 767px) {
+    padding: 5rem 4rem;
+  }
+
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 5rem 6rem;
+
+      img {
+      width: 350px;
+      height: 480.09px;
+    }
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    grid-auto-flow: column;
+    padding: 10rem 6rem;
+
+    .text {
+      max-width: 40vw;
+    }
+
+    img {
+      width: 400px;
+      height: 548.67px;
+    }
+    
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
+    grid-auto-flow: column;
+    padding: 10rem 8rem;
+
+    .text {
+      max-width: 40vw;
+    }
+
+    img {
+      width: 460px;
+      height: 633px;
+    }
+  }
+
+  @media(min-width: 1441px) {
+    grid-auto-flow: column;
+    padding: 10rem 15rem;
+
+    .text {
+      max-width: 40vw;
+    }
+
+    img {
+      width: 460px;
+      height: 633px;
+    }
+  }
 `;
 
 export const SectionSpace = styled.section`
   padding: 5rem 1.5rem;
   text-align: left;
+
+  @media(min-width: 541px) and (max-width: 767px) {
+    padding: 5rem 4rem;
+  }
+
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 5rem 8rem;
+    text-align: center;
+
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    padding: 10rem 6rem;
+    text-align: center;
+
+    .text {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
+    padding: 10rem 2rem;
+    text-align: center;
+  
+    .text {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+  
+  @media(min-width: 1441px) and (max-width: 1630px) {
+    padding: 10rem 10rem;
+    text-align: center;
+    .text {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+
+  @media(min-width: 1631px) {
+    padding: 10rem 15rem;
+    text-align: center;
+    
+    .text {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
 `;
 
 export const SectionTreatments = styled.section`
   padding: 5rem 1.5rem;
   text-align: left;
   display: grid;
-  gap: 2rem;
+  gap: 3.75rem;
+
+  .cards {
+      display: grid;
+      gap: 2rem;
+  }
+
+  @media(min-width: 541px) and (max-width: 767px) {
+    padding: 5rem 4rem;
+  }
+
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 5rem 6rem;
+    text-align: center;
+
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    padding: 10rem 6rem;
+    text-align: center;
+    
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
+    padding: 10rem 8rem;
+
+    .text {
+      text-align: center;
+    }
+
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media(min-width: 1441px) {
+    padding: 10rem 15rem;
+
+    .text {
+      text-align: center;
+    }
+
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+    }
+
+    
+  }
 `;
 
 export const Card = styled.div`
@@ -116,6 +293,12 @@ export const Card = styled.div`
   border-bottom: 0.25rem solid ${({ theme }) => theme.colors.primaryColor};
   margin: auto;
   border-radius: 0.25rem 0.25rem 0 0;
+  max-width: 327px;
+
+  height: 450px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 
   div {
     text-align: center;
@@ -125,6 +308,10 @@ export const Card = styled.div`
       font: 700 1.5rem ${({ theme }) => theme.font.titleFont};
       color: ${({ theme }) => theme.colors.titleColor};
       margin: 0.75rem 0;
+    }
+
+    p {
+        line-height: initial;
     }
 
     a {
@@ -143,12 +330,14 @@ export const SectionClinicalStaff = styled.section`
   text-align: left;
   padding: 5rem 1.5rem;
   background: #ffffff;
+  display: grid;
+  gap: 3.75rem;
 
   .image {
     text-align: center;
   }
 
-  .text {
+  .identification {
     margin-top: 0.3125rem;
     text-align: center;
 
@@ -178,19 +367,62 @@ export const SectionClinicalStaff = styled.section`
       }
     }
   }
+
+  @media(min-width: 541px) and (max-width: 767px) {
+    padding: 5rem 4rem;
+  }
+
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 5rem 6rem;
+    text-align: center;
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    padding: 10rem 6rem;
+    text-align: center;
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
+    padding: 10rem 8rem;
+
+    .text {
+      text-align: center;
+
+      p {
+        max-width: 500px;
+      }
+    }
+  }
+
+  @media(min-width: 1200px) {
+    padding: 10rem 15rem;
+
+    .text {
+      text-align: center;
+
+      p {
+        max-width: 500px;
+      }
+    }
+  }
 `;
 
 export const ContainerClinicalStaff = styled.div`
-  margin-top: 2.5rem;
   display: grid;
   gap: 2.5rem;
+
+  @media(min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;
 
 export const ContainerCarousel = styled.div`
-  margin-top: 2.5rem;
+  margin: auto;
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1150px;
 
   .rec.rec-arrow {
     display: none;
@@ -209,6 +441,27 @@ export const ContainerCarousel = styled.div`
     background-color: rgb(77, 77, 77);
     box-shadow: 0 0 1px 3px rgba(77, 77, 77, 1);
   }
+
+  @media(min-width: 1024px) {
+    
+    .rec.rec-arrow {
+      display: block;
+      background : #DCDCDC;
+
+      &:hover {
+        background: #4D4D4D;
+        color: #ffffff;
+      }
+
+      &:disabled {
+        background: #F9F9F9;
+        color: #999999;
+      }
+    }
+    .rec-carousel {
+      width: 80%;
+    }
+  }
 `;
 
 export const SectionTestimonials = styled.section`
@@ -216,8 +469,46 @@ export const SectionTestimonials = styled.section`
   text-align: left;
   background: #ffffff;
 
-  h2 {
-    margin-bottom: 3rem;
+  @media(min-width: 541px) and (max-width: 767px) {
+    padding: 5rem 4rem;
+    
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 5rem 8rem;
+    text-align: center;
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    padding: 10rem 6rem;
+    text-align: center;
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
+    padding: 10rem 2rem;
+    
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @media(min-width: 1441px) and (max-width: 1630px) {
+    padding: 10rem 6rem;
+    
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @media(min-width: 1631px) {
+    padding: 10rem 16rem;
+    
+    h2 {
+      text-align: center;
+    }
   }
 `;
 
@@ -227,6 +518,10 @@ export const CardTestimonial = styled.div`
   border-radius: 0.25rem;
   max-width: 325px;
   background: ${({ theme }) => theme.colors.backgroundColor};
+  
+  height: 300px;
+  display: grid;
+  align-items: center;
 
   p {
     position: relative;
@@ -256,17 +551,23 @@ export const CardTestimonial = styled.div`
       object-fit: cover;
       clip-path: circle();
       margin-right: 0.5rem;
-    }
+    }   
 `;
 
 export const SectionContact = styled.section`
   padding: 5rem 1.5rem;
   text-align: left;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   background: ${({ theme }) => theme.colors.backgroundColor};
 
-  .contact {
+  img {
+    width: 275px;
+    height: 386px;
+  }
+
+  .list {
     margin: 2.5rem 0;
 
     li {
@@ -280,7 +581,6 @@ export const SectionContact = styled.section`
     }
 
     a {
-      /* text-decoration: none; */
       color: ${({ theme }) => theme.colors.textColor};
     }
 
@@ -290,6 +590,58 @@ export const SectionContact = styled.section`
 
     i {
       color: ${({ theme }) => theme.colors.primaryColor};
+    }
+
+  }
+
+  @media(min-width: 541px) and (max-width: 767px) {
+    padding: 5rem 4rem;
+  }
+
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 5rem 6rem;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    padding: 10rem 6rem;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    img {
+      width: 320px;
+      height: 448.62px;
+    }
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10rem 8rem;
+
+    img {
+      width: 388px;
+      height: 544px;
+    }
+
+    .text {
+      max-width: 340px;
+    }
+  }  
+
+  @media(min-width: 1441px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10rem 15rem;
+
+    img {
+      width: 388px;
+      height: 544px;
+    }
+
+    .text {
+      max-width: 340px;
     }
   }
 `;

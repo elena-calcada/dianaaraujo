@@ -17,6 +17,10 @@ export const Container = styled.header`
   background: ${({ theme }) => theme.colors.backgroundColor};
   color: ${({ theme }) => theme.colors.textColor};
 
+  .menuDesktop {
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -27,19 +31,106 @@ export const Container = styled.header`
   }
 
   @media(min-width: 541px) and (max-width: 767px) {
-    padding: 0 2.5rem;
-  }
-
-  @media(min-width: 768px) and (max-width: 1023px) {
     padding: 0 4rem;
   }
 
-  @media(min-width: 1024px) and (max-width: 1199px) {
-    padding: 0 8rem;
+  @media(min-width: 768px) and (max-width: 1023px) {
+    padding: 0 6rem;
+
+    
   }
 
-  @media(min-width: 1200px) {
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    padding: 0 6rem;
+
+    i {
+      display: none;
+    }
+
+    .menuDesktop {
+      display: block;
+
+      ul {
+        display: flex;
+        gap: 1.25rem;
+
+        li {
+          list-style: none;
+          font: 500 0.9rem ${({ theme }) => theme.font.titleFont} ;
+
+          a{
+            color: ${({ theme }) => theme.colors.titleColor};
+            transition: color 0.2s;
+
+            :hover {
+              color: ${({ theme }) => theme.colors.secondColor};
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1200px) and (max-width: 1440px) {
     padding: 0 8rem;
+
+    i {
+      display: none;
+    }
+
+    .menuDesktop {
+      display: block;
+
+      ul {
+        display: flex;
+        gap: 1.75rem;
+
+        li {
+          list-style: none;
+          font: 500 0.9rem ${({ theme }) => theme.font.titleFont} ;
+
+          a{
+            color: ${({ theme }) => theme.colors.titleColor};
+            transition: color 0.2s;
+
+            :hover {
+              color: ${({ theme }) => theme.colors.secondColor};
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1441px) {
+    padding: 0 10rem;
+
+    i {
+      display: none;
+    }
+
+    .menuDesktop {
+      display: block;
+
+      ul {
+        display: flex;
+        gap: 1.75rem;
+
+        li {
+          list-style: none;
+          font: 500 0.9rem ${({ theme }) => theme.font.titleFont} ;
+
+          a{
+            color: ${({ theme }) => theme.colors.titleColor};
+            transition: color 0.2s;
+
+            :hover {
+              color: ${({ theme }) => theme.colors.secondColor};
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -67,6 +158,8 @@ export const ContainerMenu = styled.nav`
     transition: 500ms;
     z-index: 100;
   }
+
+
 `;
 
 export const NavWrap = styled.div`
