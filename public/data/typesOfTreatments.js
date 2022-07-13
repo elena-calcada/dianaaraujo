@@ -39,6 +39,6 @@ export const typesOfTreatments = {
   odontopediatria: {
     image: pediatricDentistry,
     title: 'Odontopediatria',
-    description: 'In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui.',
+    description: 'Cuida da saúde bucal das crianças. Tem papel importante no desenvolvimento da fala, da mastigação, além de prevenir cáries e outras alterações, evitando maiores problemas na vida adulta.',
   },
 };

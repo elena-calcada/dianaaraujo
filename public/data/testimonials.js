@@ -18,6 +18,6 @@ export const testimonials = [
   {
     name: 'Elena Evangelista',
     image: elena,
-    testimonial: 'Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt.',
+    testimonial: 'O atendimento da Diana é tão diferente, tão especial, que consigo me divertir no consultório. Quem tem essa ansiedade louca para dentista como eu, precisa de um atendimento como o dela.',
   },
 ];

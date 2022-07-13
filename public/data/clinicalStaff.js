@@ -14,13 +14,13 @@ export const clinicalStaff = {
     image: jessica,
     identification: 'Dra. Jessica Foligno',
     specialty: 'Endodontista',
-    cro: 'CRO RJ - XXXXX',
+    cro: 'CRO RJ - 43163',
   },
 
   'suellen-viana': {
     image: suellen,
     identification: 'Dra. Suellen Viana',
     specialty: 'Implantodontista',
-    cro: 'CRO RJ - XXXXX',
+    cro: 'CRO RJ - 43099',
   },
 };

@@ -138,9 +138,9 @@ export default function Home() {
                 <h3>{value.identification}</h3>
                 <h4>{value.specialty}</h4>
                 <p>{value.cro}</p>
-                <Link href={`/${key}`}>
+                {/* <Link href={`/${key}`}>
                   <a>Saiba mais...</a>
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}
